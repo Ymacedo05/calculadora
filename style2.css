@@ -1,0 +1,130 @@
+
+:root{
+
+    --fundo: rgb(233, 233, 225);
+
+    --calculadora: rgb(58, 58, 58);
+
+    --textoImput: rgb(114, 114, 116);
+
+    --teclasNormais:#363943 ;
+    --caractere:rgb(196, 195, 194) ;
+    --sombraCaractere: black;
+    --efeitoCarctere:aqua;
+
+    --teclasEspeciais:rgb(197, 22, 255);
+    
+}
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--fundo);
+}
+
+#pai_supremo{
+    border-radius: 15px;
+    width: 315px;
+    height: 450px;
+    padding:10px;
+    background-color: rgb(58, 58, 58);
+    box-shadow: 3px 3px 6px rgb(111, 110, 110);
+}
+header{
+    margin: 30px 0px;
+    width: 100%;
+
+}
+
+header input{
+    display: block;
+    width: 85%;
+    height: 60px;
+    padding: 5px;
+    text-align: right;
+    font-size: 1.5em;
+    margin: auto;
+    color: var(--textoImput);
+    letter-spacing: 1.5px;
+    font-weight: 900;
+    border-radius: 10px;
+}
+
+header input::placeholder {
+    color: var(--textoImput);
+}
+
+/* ==================================== */
+main{
+    display: flex;
+    justify-content: center;
+}
+
+main #esq{
+    width: 75%;
+    
+}
+
+
+main #dir{
+    width:25%;
+  
+}
+
+main button{
+    width: 60px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #31343d;
+    margin: 5px;
+    box-shadow: 2px 2px 2px var(--sombraCaractere);
+    font-weight: 900;
+    font-size: 1.2em;
+    background-color: var(--teclasNormais);
+    color: var(--caractere);
+}
+
+button:hover{
+    box-shadow: 3px 3px 5px var(--efeitoCarctere);
+    color: var(--efeitoCarctere);
+}
+button:active{
+    box-shadow: 0px 0px 10px var(--efeitoCarctere);
+    background-color: var(--efeitoCarctere);
+    border: 1px solid var(--efeitoCarctere);
+    color: black;
+}
+.dif:hover{
+    box-shadow: 3px 3px 5px var(--teclasEspeciais);
+    color: var(--teclasEspeciais);
+}
+.dif:active{
+    background-color: var(--teclasEspeciais);
+    box-shadow: 0px 0px 10px var(--teclasEspeciais);
+    border: 1px solid var(--teclasEspeciais);
+    color: black;
+}
+.dif{
+    color: var(--teclasEspeciais);
+}
+
+#zero, #c{
+    width: 134px;
+    height: 50px;
+}
+#igual{
+    height: 110px;
+}
+
+
